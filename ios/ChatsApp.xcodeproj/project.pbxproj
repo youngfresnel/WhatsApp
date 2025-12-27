@@ -11,6 +11,14 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		DB9F4C68A107419BA3B80348 /* HelveticaNeueBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1985E22566974A8592E22BCB /* HelveticaNeueBlack.otf */; };
+		DCDC110A050D497C9147D8C6 /* HelveticaNeueBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D192DB88041434DAC075E69 /* HelveticaNeueBold.otf */; };
+		80FCD1FB3F044263992BA109 /* HelveticaNeueHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E34A50E07F4426498A81F5C /* HelveticaNeueHeavy.otf */; };
+		F35C9D45D6FD45E89930DD9A /* HelveticaNeueLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 59AB9B0509274E058F4742D7 /* HelveticaNeueLight.otf */; };
+		B907BE0BDF994DE886A0977F /* HelveticaNeueMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1522957E0CF249AFBBCD425E /* HelveticaNeueMedium.otf */; };
+		204A682C598C4A25A8563350 /* HelveticaNeueRoman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71BBCC1BF87B40C2973F3AFC /* HelveticaNeueRoman.otf */; };
+		73F42E8FA81A4CD9AE870577 /* HelveticaNeueThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = F54B78FD2094492AA590CCD4 /* HelveticaNeueThin.otf */; };
+		2D6423566F13457BB3511657 /* HelveticaNeueUltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BFD23BC3F4A54B328655B /* HelveticaNeueUltraLight.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,14 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ChatsApp/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ChatsApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1985E22566974A8592E22BCB /* HelveticaNeueBlack.otf */ = {isa = PBXFileReference; name = "HelveticaNeueBlack.otf"; path = "../src/assets/fonts/HelveticaNeueBlack.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7D192DB88041434DAC075E69 /* HelveticaNeueBold.otf */ = {isa = PBXFileReference; name = "HelveticaNeueBold.otf"; path = "../src/assets/fonts/HelveticaNeueBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9E34A50E07F4426498A81F5C /* HelveticaNeueHeavy.otf */ = {isa = PBXFileReference; name = "HelveticaNeueHeavy.otf"; path = "../src/assets/fonts/HelveticaNeueHeavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		59AB9B0509274E058F4742D7 /* HelveticaNeueLight.otf */ = {isa = PBXFileReference; name = "HelveticaNeueLight.otf"; path = "../src/assets/fonts/HelveticaNeueLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1522957E0CF249AFBBCD425E /* HelveticaNeueMedium.otf */ = {isa = PBXFileReference; name = "HelveticaNeueMedium.otf"; path = "../src/assets/fonts/HelveticaNeueMedium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		71BBCC1BF87B40C2973F3AFC /* HelveticaNeueRoman.otf */ = {isa = PBXFileReference; name = "HelveticaNeueRoman.otf"; path = "../src/assets/fonts/HelveticaNeueRoman.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F54B78FD2094492AA590CCD4 /* HelveticaNeueThin.otf */ = {isa = PBXFileReference; name = "HelveticaNeueThin.otf"; path = "../src/assets/fonts/HelveticaNeueThin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7D1BFD23BC3F4A54B328655B /* HelveticaNeueUltraLight.otf */ = {isa = PBXFileReference; name = "HelveticaNeueUltraLight.otf"; path = "../src/assets/fonts/HelveticaNeueUltraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +109,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				1DEF00F669444A45B0883186 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -115,6 +132,22 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		1DEF00F669444A45B0883186 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				1985E22566974A8592E22BCB /* HelveticaNeueBlack.otf */,
+				7D192DB88041434DAC075E69 /* HelveticaNeueBold.otf */,
+				9E34A50E07F4426498A81F5C /* HelveticaNeueHeavy.otf */,
+				59AB9B0509274E058F4742D7 /* HelveticaNeueLight.otf */,
+				1522957E0CF249AFBBCD425E /* HelveticaNeueMedium.otf */,
+				71BBCC1BF87B40C2973F3AFC /* HelveticaNeueRoman.otf */,
+				F54B78FD2094492AA590CCD4 /* HelveticaNeueThin.otf */,
+				7D1BFD23BC3F4A54B328655B /* HelveticaNeueUltraLight.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -185,6 +218,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				DB9F4C68A107419BA3B80348 /* HelveticaNeueBlack.otf in Resources */,
+				DCDC110A050D497C9147D8C6 /* HelveticaNeueBold.otf in Resources */,
+				80FCD1FB3F044263992BA109 /* HelveticaNeueHeavy.otf in Resources */,
+				F35C9D45D6FD45E89930DD9A /* HelveticaNeueLight.otf in Resources */,
+				B907BE0BDF994DE886A0977F /* HelveticaNeueMedium.otf in Resources */,
+				204A682C598C4A25A8563350 /* HelveticaNeueRoman.otf in Resources */,
+				73F42E8FA81A4CD9AE870577 /* HelveticaNeueThin.otf in Resources */,
+				2D6423566F13457BB3511657 /* HelveticaNeueUltraLight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
