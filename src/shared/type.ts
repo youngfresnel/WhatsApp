@@ -14,7 +14,8 @@ export interface IWView extends ViewProps{
   isParent?:boolean;
 }
 
-export type ITabHeaderProps = {
+export interface ITabHeaderProps {
+  title:string;
   icons:THeaderIcons[];
   bolder?:boolean;
 }

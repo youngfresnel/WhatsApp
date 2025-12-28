@@ -11,9 +11,7 @@ const ProviderComp = React.memo((props:any) =>{
     return(
         <Provider store={store}>
             <SafeAreaProvider>
-                <NavigationContainer>
                     <App/>
-                </NavigationContainer>
             </SafeAreaProvider>
         </Provider>
     )

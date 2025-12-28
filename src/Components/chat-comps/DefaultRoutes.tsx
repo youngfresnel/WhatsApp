@@ -6,6 +6,7 @@ import { ArchiveIcon, BoxArrowDownIcon, CameraIcon,DotsThreeVerticalIcon } from 
 import { moderateScale, scale } from "../../constants/responsiveSize";
 import useAppcolor from "../../shared/useColor";
 import fonts from "../../constants/fonts";
+import contacts from "../../shared/contacts";
 
 
 const DefaultRoutes = React.memo((props:any) => {
@@ -19,7 +20,7 @@ const DefaultRoutes = React.memo((props:any) => {
             <FlatList
             data={[{}]}
             renderItem={() => <>            
-            <TabsHeaderComponent bolder icons={headerIcons}/>
+            <TabsHeaderComponent bolder icons={headerIcons} title="WhatsApp"/>
             <View style={{paddingHorizontal:scale(10),}}>
                 <View style={{ position:'relative', justifyContent:'center'}}>
                 <Image
@@ -54,7 +55,9 @@ const DefaultRoutes = React.memo((props:any) => {
             </View>
 
             <View style={{paddingHorizontal:moderateScale(10)}}>
-                <ChatHead/>
+                {contacts.map(contact => 
+                    <ChatHead/>
+                )}
             </View>
             </>}
             />

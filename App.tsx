@@ -7,6 +7,7 @@ import {ChatCenteredIcon, ClockClockwiseIcon, UsersThreeIcon,PhoneIcon} from 'ph
 import useAppcolor from './src/shared/useColor';
 import fonts from './src/constants/fonts';
 import ChatsComponent from './src/Components/tabs/Chats';
+import UpdateComponent from './src/Components/tabs/update';
   const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const appColor = useAppcolor()
@@ -18,14 +19,14 @@ import ChatsComponent from './src/Components/tabs/Chats';
     { key: 'community', title: 'Communities', focusedIcon: (props:any) => <UsersThreeIcon {...props} weight='fill'/> , unfocusedIcon:(props:any) => <UsersThreeIcon {...props} />},
     { key: 'calls', title: 'Calls', focusedIcon: (props:any) => <PhoneIcon {...props} weight='fill'/>, unfocusedIcon:(props:any) => <PhoneIcon {...props}/> },
   ]);
-  const MusicRoute = () => <Text>message</Text>
-  const AlbumsRoute = () => <Text>Music</Text>
+
+  
   const RecentsRoute = () => <Text>Music</Text>
   const NotificationsRoute = () => <Text>Music</Text>
 
   const renderScene = BottomNavigation.SceneMap({
     chat: ChatsComponent,
-    update: AlbumsRoute,
+    update: UpdateComponent,
     community: RecentsRoute,
     calls: NotificationsRoute,
   });

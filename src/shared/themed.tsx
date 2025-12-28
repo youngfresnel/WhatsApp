@@ -21,4 +21,4 @@ export const WView = React.memo((props:IWView) => {
             {props.children}
         </View>
     )
-})
+})  
