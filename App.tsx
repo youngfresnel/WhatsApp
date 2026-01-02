@@ -8,6 +8,7 @@ import useAppcolor from './src/shared/useColor';
 import fonts from './src/constants/fonts';
 import ChatsComponent from './src/Components/tabs/Chats';
 import UpdateComponent from './src/Components/tabs/update';
+import CommunitiesComponent from './src/Components/tabs/Communities';
   const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const appColor = useAppcolor()
@@ -21,13 +22,12 @@ import UpdateComponent from './src/Components/tabs/update';
   ]);
 
   
-  const RecentsRoute = () => <Text>Music</Text>
   const NotificationsRoute = () => <Text>Music</Text>
 
   const renderScene = BottomNavigation.SceneMap({
     chat: ChatsComponent,
     update: UpdateComponent,
-    community: RecentsRoute,
+    community: CommunitiesComponent,
     calls: NotificationsRoute,
   });
 

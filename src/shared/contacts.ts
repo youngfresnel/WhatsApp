@@ -13,7 +13,7 @@
     },
     {
         "id": 3,
-        "name": "Alan Lehner",
+        "name": "Yannis",
         "lastMessage": "voluptate cupiditate necessitatibus omnis ex adipisci corporis voluptate quod nam",
         "profileImage": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/29.jpg"
     },
@@ -25,7 +25,7 @@
     },
     {
         "id": 5,
-        "name": "Jerald Waelchi",
+        "name": "Wifried",
         "lastMessage": "veritatis pariatur vero ex rem hic aspernatur odio distinctio corporis",
         "profileImage": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1189.jpg"
     },

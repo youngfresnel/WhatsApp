@@ -4,7 +4,7 @@
         "user_id": 3,
         "status": [
             {"text": "Good morning"},
-            {"text": "Today is beautiful"}
+            {"text": "Le cameroun est null"}
         ]
     },
     {
@@ -12,7 +12,7 @@
         "user_id": 5,
         "status": [
             {"text": "I visited Japan last week"},
-            {"text": "Japan is an amazing country"}
+            {"text": "2026 m'a tout montrer"}
         ]
     },
 ]
