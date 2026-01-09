@@ -7,7 +7,7 @@
     },
     {
         "id": 1,
-        "name": " Mr. Assomo Wifried",
+        "name": "Wifried",
         "lastMessage": "iusto nulla libero autem earum ipsum voluptas repellat quos maxime",
         "profileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3M40s88YcW6KaA3Ef90EaiQSil_HIzxolw&s"
     },

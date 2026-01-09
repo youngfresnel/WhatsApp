@@ -5,7 +5,11 @@ import { IMainSlice } from './type'
 
 // Define the initial state using that type
 const initialState: IMainSlice = {
-  value: 0,
+ user_details: {
+  id:200,
+  name:'Marius',
+  profile_picture:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3M40s88YcW6KaA3Ef90EaiQSil_HIzxolw&s'
+ },
 }
 
 export const mainSlice = createSlice({
@@ -15,12 +19,14 @@ export const mainSlice = createSlice({
   reducers: {
    
     // Use the PayloadAction type to declare the contents of `action.payload`
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload
-    },
+    // incrementByAmount: (state, action: PayloadAction<number>) => {
+    //   state.value += action.payload
+    // },
   },
 })
 
-export const {  incrementByAmount } = mainSlice.actions
+export const {  
+        // incrementByAmount
+  } = mainSlice.actions
 
 export default mainSlice.reducer

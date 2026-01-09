@@ -15,8 +15,7 @@ const ChatsComponent = React.memo((props:any) => {
             <NavigationContainer>
                 <Stack.Navigator  >
                     <Stack.Screen options={{headerShown:false}} name="default" component={DefaultRoutes} />
-                    <Stack.Screen 
-                     name="chatPage" options={{}} component={ChatsRoutes} />
+                    <Stack.Screen   name="chatPage" options={{headerBackVisible:false, headerTitle:''}} component={ChatsRoutes} />
                 </Stack.Navigator>
             </NavigationContainer>
         </WView>

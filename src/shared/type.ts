@@ -3,7 +3,7 @@ import fonts from "../constants/fonts";
 
 // Define a type for the slice state
 export interface IMainSlice {
-  value: number
+  user_details : TUserDetails
 }
 
 export interface IWText extends TextProps {
@@ -30,4 +30,17 @@ export type THeaderIcons ={
   name: string;
   lastMessage: string;    
   profileImage: string;   
+}
+
+export type TMessage ={
+    id:number;
+    message:string;
+    time:string;
+    sender_id:number;
+}
+
+export type TUserDetails = {
+  id:number;
+  name:string;
+  profile_picture:string;
 }
