@@ -4,6 +4,8 @@ import fonts from "../constants/fonts";
 // Define a type for the slice state
 export interface IMainSlice {
   user_details : TUserDetails
+  messages:TMessage[];
+
 }
 
 export interface IWText extends TextProps {

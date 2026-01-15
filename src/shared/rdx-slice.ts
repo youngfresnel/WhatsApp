@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import { IMainSlice } from './type'
+import { IMainSlice, TMessage } from './type'
 
 
 // Define the initial state using that type
@@ -10,6 +10,7 @@ const initialState: IMainSlice = {
   name:'Marius',
   profile_picture:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3M40s88YcW6KaA3Ef90EaiQSil_HIzxolw&s'
  },
+ messages: []
 }
 
 export const mainSlice = createSlice({
@@ -19,14 +20,14 @@ export const mainSlice = createSlice({
   reducers: {
    
     // Use the PayloadAction type to declare the contents of `action.payload`
-    // incrementByAmount: (state, action: PayloadAction<number>) => {
-    //   state.value += action.payload
-    // },
+    setMessage: (state, action: PayloadAction<TMessage>) => {
+      state.messages.push(action.payload)
+    },
   },
 })
 
 export const {  
-        // incrementByAmount
+    setMessage
   } = mainSlice.actions
 
 export default mainSlice.reducer

@@ -3,15 +3,18 @@ import { FlatList, SafeAreaView, Text, TextInput, View } from "react-native";
 import { WText,WView } from "../../shared/themed";
 import useAppcolor from "../../shared/useColor";
 import { TContact, TMessage } from "../../shared/type";
-import { DotsThreeVerticalIcon, PhoneIcon, VideoCameraIcon, ArrowLeftIcon, CheckIcon,ChecksIcon, MicrophoneIcon } from "phosphor-react-native";
+import { DotsThreeVerticalIcon, PhoneIcon, VideoCameraIcon, ArrowLeftIcon, SmileyIcon,ChecksIcon, MicrophoneIcon, PaperclipIcon, CameraIcon } from "phosphor-react-native";
 import { RImage } from "../../shared/ReUsable";
 import {  scale, textScale, verticalScale, } from "../../constants/responsiveSize";
 import { useAppSelector } from "../../shared/rdx-hooks";
+import fonts from "../../constants/fonts";
 
 const ChatsRoutes = React.memo((props:any) => {
     const appColor = useAppcolor();
+    const [chatValue, setChatValue] = React.useState('');
     const routeParams= props.route.params.contact as TContact
     const curl_user_details = useAppSelector (state => state.main.user_details)
+    const messages = useAppSelector(state => state.main.messages)
 
     React.useLayoutEffect(() => {
         props.navigation.setOptions({
@@ -66,29 +69,71 @@ const ChatsRoutes = React.memo((props:any) => {
         )
     }
 
+    const handleSubmit = React.useCallback(() => {
+        if(chatValue !== ''){
+            const d = new Date();
+            const message:TMessage ={
+                id:messages.length + 1,
+                message:chatValue,
+                sender_id:curl_user_details.id,
+                time:d.getHours() + ":" + d.getMinutes() + "PM"
+            }
+        }
+    },[chatValue, messages,])
+
     return(
             <WView isParent style={{backgroundColor:appColor.dark_blue_50,}}>
                 <FlatList
-                    data={[{message:'tu es deja a quel niveau', time:'15:26', sender_id:1} as TMessage]}
+                    data={messages}
                     renderItem={(props) =>renderItem(props.item)}
                     keyExtractor={(item, index) => index.toString()}
                     contentContainerStyle={{paddingHorizontal:scale(10),flex:1, paddingBottom:80}}
                 />
              
-                <WView style={{flexDirection:"row"}}>
-                    <WView style={{flexGrow:1, paddingHorizontal:scale(8)}}>
+                <WView style={{flexDirection:"row", alignItems:'flex-end',paddingBottom:scale(5), justifyContent:'space-between', paddingHorizontal:scale(10)}}>
+                    <WView style={{flexGrow:1,  maxWidth:scale(350)}}>
+                        <WView style={{width:scale(24), paddingHorizontal:scale(10), height:scale(24), position:'absolute', bottom:scale(12),left:scale(5), zIndex:4,}}>
+                            <SmileyIcon />
+                        </WView>
                         <TextInput
+                        onChangeText={setChatValue}
+                        multiline={true}
+                        defaultValue={chatValue}
                         style={{
-                            height:scale(45),
-                            backgroundColor:appColor.dark_blue_50,
+                            maxHeight:scale(200),
+                            minHeight:scale(50),
+                            borderRadius:scale(20),
+                            backgroundColor:'red',
                             elevation:2,
-                            width:'100%'
+                            width:'100%',
+                            paddingLeft:scale(45),
+                            paddingRight:scale(50),
+                            maxWidth:scale(330),
+                            fontSize:textScale(18),
+                            fontFamily: fonts.roman
                         }}
                         />
+                        <WView style={{paddingHorizontal:scale(10),
+                            position:'absolute', 
+                            bottom:scale(12),
+                            flexDirection:"row",
+                            right:scale(5),
+                            zIndex:4,}}
+                              >
+                            <WView>
+                             <PaperclipIcon size={24}/>
+                            </WView>
+                            {
+                                chatValue.length == 0 && 
+                                <WView>
+                                    <CameraIcon size={24}/>
+                                </WView>
+                            }
+                        </WView>
                     </WView>
 
-                    <WView style={{backgroundColor:appColor.green_100, elevation:3, borderRadius:scale(50)}}>
-                        <MicrophoneIcon size={40}/>
+                    <WView style={{ width:scale(45),height:scale(45),marginHorizontal:scale(5),backgroundColor:appColor.green_100, justifyContent:'center',alignItems:'center',elevation:3, borderRadius:scale(50)}}>
+                        <MicrophoneIcon color="white" weight="fill"/>
                     </WView>
                 </WView>
             </WView>
